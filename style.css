@@ -7,6 +7,11 @@
 
 body {
   font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 
   
 }
@@ -14,12 +19,15 @@ a{
     text-decoration: none;
     color:#1D1D1F ;
 }
+ul{
+    list-style: none;
+}
 img { width: 100%; }
 /* Header-section start */
 header{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: fit-content;
     min-width: 314px;
     padding: 10px;
     background-color: #F3FCF7;
@@ -32,6 +40,7 @@ header{
     align-items: center;
     padding: 21px 10px;
     position: sticky;
+ 
 }
 
 .logo{
@@ -62,7 +71,7 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     align-self:center;
-    height: 400px;
+    height: fit-content;
     gap: 50px;
  }
  .hero-title{
@@ -112,6 +121,7 @@ nav{
     font-weight: 50;
 }
 .hero-img{
+    display: flex;
     padding: 0px 10px;
     border-radius: 18px;
     max-width: 100%;
@@ -126,12 +136,107 @@ nav{
 
     }
 
+.logoipsum-mobile{
+   display: flex;
+    height: 100px;
+    width:100vw;
+    border: 1px solid #06C167;
+    align-items: center;
+    justify-content: center;
+  
 
+}
+.logoipsum-mobile div {
+    display: flex;
+    height: 138px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoipsum-mobile div div, .logoipsum-img3, .logoispum-land{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+    width: 138px;
+}
+.logoipsum-mobile div div{
+    gap: 30px}
+   .logoispum-land{
+        display: none;
+
+       
+    }
+
+    .features{
+        display: flex;
+       
+        height: 380px;
+        width: 80vw;
+        border-top: 1px solid#707070;
+         border-bottom: 1px solid #707070;
+         border-radius: 5px;
+         align-items: center;
+         margin-top:10px ;
+    }
+    .features-layout div{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 123px;
+    }
+    .features-layout div p{
+        font-size: 10px;
+    }
+    .features-layout{
+        display: flex;
+        width: 100%;
+        height: 400px;
+       
+       flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    #features-img{
+        height: 26px;
+        width: 38px;
+    }
+   .healthy-food-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 50px;
+    padding: 50px;
+   }
+   .healthy-food-content h2{
+    font-size: 16px;
+   }
+   .healthy-food-content ul li{
+        display: flex;
+        font-size: 13px;
+        gap: 10px;
+   }
+   .healthy-food-content ul li img{
+    height: 19px;
+    width: 26px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+   }
+  
  @media screen and (min-width:1024px) {
     header{
        
-        
+            display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: fit-content;
+    width: 100%;
         padding: 50px;
+        
     }
     .menu-border{
         display:none
@@ -140,9 +245,20 @@ nav{
         display: inline-block;
        
     }
+    .logo{
+        height: 100px;
+        width: 350px;
+    }
+    .navbar{
+        display: flex;
+        height: 300px;
+      
+        justify-content: space-around;
+    }
     nav ul {
         display: flex;
         list-style: none;
+        font-size: 25px;
         gap: 30px;
     }
     .hero-section{
@@ -150,23 +266,25 @@ nav{
         flex-direction: row;
         align-items:center;
         justify-content: space-between;
-        column-gap: 100px;
-        max-width: 1400px;
-        /* justify-content: space-between;
-        align-self: center;
+       
+        min-width: 800px;
+       
+       
         padding: 20px;
-       max-width: 1400px; */
+       ;
         }
          .hero-div{
             align-items: flex-start;
             flex: 1;
-            max-width: 350px;
+            min-width: 40vw;
             row-gap: 20px;
+            
          }
         .hero-title{
             height: 40px;
-            width: 360px;
+            width: 396px;
             text-align: start;
+            font-size: 60px;
             padding: 0;
          
         }
@@ -181,12 +299,47 @@ nav{
             border-radius: 15px;
         }
          .hero-img{
-            flex: 2;
-            align-self: flex-end;
-            padding: 50px 0px;
-            height: 370px;
-            max-width: 400px;
-            border-radius: 0;
+        flex: 2;
+        align-self: flex-end;
+        padding: 0px 0px;
+        height: 700px;
+        width: 497px;
+        border-radius: 0;
+    }
+         .hero-img img{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            border-radius: 18px;
          }
+          .logoispum-land{
+        display: flex;
+        width: 200px;
+
+
+       
+    }
+    .logoipsum-mobile div {
+    display: flex;
+  
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    padding-left: 20px;
+}
+.first-ipsumimg img{
+    display: flex;
+    margin-right: 70px;
+    gap: 70px;
+    
+    
+}
+.features-layout div{
+    width: 200px;
+}
+.healthy-food-content{
+    
+}
   
 }

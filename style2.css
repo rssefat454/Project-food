@@ -1,0 +1,29 @@
+body{
+ font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+a{
+    text-decoration: none;
+    color:#1D1D1F ;
+}
+header{
+    display: flex;
+    align-items: space-around;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+    background-color: #F3FCF7;
+}
+/*navbar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 10px;
+    position: sticky;
+}
+nav{
+    display: none;
+}
