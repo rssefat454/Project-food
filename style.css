@@ -226,7 +226,161 @@ nav{
     align-items: center;
     align-self: center;
    }
+   .healthy-food-content h2{
+    display: flex;
+    text-align: center;
+   line-height: 40px;
+    width: 250px;
+    font-size: 29px;
+
+}
+  .veggie-food-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    padding: 50px;
+   }
+      .veggie-food-content h2{
+    display: flex;
+    text-align: center;
+   line-height: 40px;
+    width: 270px;
+    font-size: 29px;
+
+}
+   .veggie-food-content ul li{
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 30px;
+
+   }
+   .veggie-food-content ul li h3{
+    color: #06C167;
+   }
+   .veggie-food-content ul li span{
+    font-size: 8px;
+    color: #1D1D1F;
+   }
+   .veggie-food-btn{
   
+    display: flex;
+    justify-content: center;
+    flex:1;
+    width:90%;
+    height: 68px;
+    background-color: #06C167;
+    align-items: center;
+    align-self: center;
+    padding: 20px 10px;
+   
+    border: none;
+   
+  
+   }
+   .veggie-food-btn span{
+    color: #FFFFFF ;
+    width: 100px;
+    height: 19px;
+    font-size: 10px;
+  display: flex;
+  
+  align-items: center;
+   }
+   .veggie-food-btn img{
+    display: flex;
+    width: 20px;
+    height: 9px;
+   }
+   .veggie-food-img img{
+    padding: 0px 50px;
+   }
+   .variety-food-heading div img{
+    display: none;
+   }
+   .variety-food-heading div span{
+    font-size: 9px;
+   }
+   .variety-food-heading div{
+    line-height: 40px;
+   }
+   .variety-food-heading h4{
+    display: none;
+   }
+   .variety-food-heading h3{
+    font-size: 25px;
+    width: 250px;
+    text-align: center;
+    word-spacing: 20px;
+   }
+   .variety-food-heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+   .variety-boxes{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+
+   }
+   #box{
+    display: flex;
+    flex-wrap: wrap;
+        justify-content: center;
+   
+   }
+   .box1,.box2{
+    flex-direction: row;
+   }
+   .box-img{
+    height: 250px;
+    width: 250px;
+    display: flex;
+   }
+   .box-content{
+    height: 250px;
+    width: 270px;
+    border: 1px solid
+     #06C167;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 20px;
+     background-color: #F0F1EC;
+     padding-inline-start: 20px;
+   }
+   .box-content button{
+    height: 40px;
+    width: 130px;
+    background-color: #F0EDE2;
+    border: none;
+    border-radius: 10px;
+   }
+   .box-content h4{
+    
+    width: 220px;
+    font-size: 25px;
+   }
+   .box-content p{
+    font-size: 13px;
+    width: 190px;
+   }
+    .box-content button span{
+        height: 8px;
+        width: 50px;
+        color: #06C167;
+        margin-right: 5px;
+    }
+   .box-content button img{
+    height: 6px;
+    width: 12.22px;
+    color: #06C167;
+   }
+   /* .box3, .box4{
+    flex-direction: row-reverse;
+   } */
  @media screen and (min-width:1024px) {
     header{
        
@@ -338,6 +492,98 @@ nav{
 .features-layout div{
     width: 200px;
 }
-
-  
+.healthy-food{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.healthy-food-img{
+    height: 500px;
+    width: 500px;
+}
+ .healthy-food-content h2{
+  
+    text-align: center;
+  
+
+} 
+.veggie-food{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 150px;
+   
+}
+.veggie-food-content{
+    line-height: 50px;
+    align-items: start;
+    padding-left: 0;
+}
+.veggie-food-content h2{
+    text-align: left;
+}
+.veggie-food-img{
+    height: 400px;
+    width: 350px;
+    background-color: #F3FAFB;
+    display: flex;
+     justify-content: end;
+     align-self: center;
+    
+}
+.veggie-food-img img{
+    height: 80%;
+    width: 75%;
+    padding: 0;
+   
+}
+  .veggie-food-btn{
+    width: 150px;
+    align-self: start;
+    border-radius: 10px;
+    
+  }
+  .veggie-food-content ul{
+    display: flex;
+    row-gap: 20px;
+    margin-top: 20px;
+  }
+  .veggie-food-content ul li{
+    width: 100px;
+   align-content: flex-start;
+  }
+  .box1,.box2{
+    flex-direction: row;
+  }
+  .variety-boxes{
+    flex-direction: row;
+    flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1300px;
+  }
+  .box3,.box4{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+.box-content{
+    width: 250px;
+    flex-grow: 1;
+}
+.variety-food-heading h3{
+    display: none;
+}
+.variety-food-heading h4{
+    display: inline-block;
+        font-size: 25px;
+    width: 250px;
+    text-align: center;
+    word-spacing: 20px;
+    margin-bottom: 50px;
+    
+}
+.variety-food-section{
+    margin-top: 20px;
+}
+}
+
+
