@@ -339,6 +339,9 @@ nav{
     width: 250px;
     display: flex;
    }
+   .box1 img{
+    width: 270px;
+   }
    .box-content{
     height: 250px;
     width: 270px;
@@ -378,9 +381,142 @@ nav{
     width: 12.22px;
     color: #06C167;
    }
-   /* .box3, .box4{
-    flex-direction: row-reverse;
-   } */
+   .popular-product-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+   }
+   .product-heading{
+    height: 115px;
+    width: 318px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  flex-wrap: wrap;
+   }
+   .product-heading span{
+    font-size: 10px;
+   }
+   .product-title{
+    display: flex;
+    text-align: center;
+    width: 170px;
+    word-spacing: 10px;
+    
+   }
+   #product-box{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+   }
+   .banana-box{
+    border:1px solid #06C167;
+   }
+   .papaya-box,.vegetable-box,.orange-box{
+    border:1px solid #76767540 ;
+   }
+    #product-box ul{
+        display: flex;
+        gap: 6px;
+
+    }
+    #product-box button{
+        display: flex;
+        gap: 5px;
+        height: 54px;
+        width: 177px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #06C167;
+    }
+    #product-box button span{
+        height: 17px;
+        width: 87px;
+        font-size: 15px;
+        color: #06C167;
+    }
+    #product-box button img{
+        height: 12px;
+        width: 20px;
+    }
+    #product-box ul li img{
+        height: 17px;
+        width: 17;
+
+    }
+    .product-layout{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+   #image-box{
+    height: 170px;
+    width: 170px;
+   }
+   .old-price{
+    text-decoration: line-through;
+    color: #767675;
+   }
+   .number-span{
+    color: #06C167;
+   }
+   .backround-img{
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 400px;
+    margin-top: 50px;
+ 
+
+   }
+   .shadow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    text-align: center;
+   }
+   .shadow h1{
+    color: #FFFFFF;
+    width: 290px;
+    height: 126px;
+   }
+   .backround-img button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 293px;
+    height: 79px;
+    background-color: #06C167;
+    border: none;
+    border-radius: 10px;
+   }
+    .backround-img button span{
+        height: 17px;
+        width: 100px;
+        font-size: 12px;
+        color: white;
+
+    }
+        .backround-img button img{
+        height: 10px;
+        width: 17px;
+    }
+
+
  @media screen and (min-width:1024px) {
     header{
        
@@ -554,7 +690,12 @@ nav{
   }
   .box1,.box2{
     flex-direction: row;
+ 
   }
+.box1 img {
+    width: 250px;
+   
+}
   .variety-boxes{
     flex-direction: row;
     flex-wrap: wrap;
@@ -584,6 +725,46 @@ nav{
 .variety-food-section{
     margin-top: 20px;
 }
+   .variety-food-heading div img{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    
+   }
+   .variety-food-heading div{
+    display: flex;
+    align-items: center;
+    border: 1px solid #06C167;
+    width: 120px;
+    height: 30px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #F3FAFB;
+   }
+   .variety-food-heading div span{
+    color: #06C167;
+   } 
+
+      .product-layout{
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        gap: 20px;
+      }
+      #product-box{
+        height: 444px;
+        width: 270px;
+        flex-wrap: wrap;
+        border-radius: 10px;
+      }
+      .backround-img{
+        height: 300px;
+        width: 800px;
+        border-radius: 20px;
+      }
+ 
 }
 
 
