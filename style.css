@@ -857,6 +857,19 @@ nav{
       .footer-input, .footer-button{
         border-radius: 10px;
       }
+      .footer-contact{
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        padding-top: 46px;
+      }
+      .footer-brand{
+        gap: 0;
+        padding-top: 12px;
+      }
+      .footer-logo{
+        height: 32px;
+      }
       
  
 }
